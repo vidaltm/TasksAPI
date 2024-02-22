@@ -21,7 +21,7 @@ Na questão de usuarios eu somente criar um metodo que preeche alguns usuarios e
 - Futuramente essa API vai ter novas funções?
 - A API vai ser usada somente internamente ou também externamente?
 
-Fase 3: Final
+# Fase 3: Final
 - Incluiria validação e login para os usuarios usando um JWT inicialmente, pois da maneira que está não tem segurança nenhuma. </br>
 - Poderia usar um design pattern Facade para simplificar as interfaces usadas
 - Decidia com a empresa qual ferramenta em nuvem usariamos, AWS, Azure, GCP
