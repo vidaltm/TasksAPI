@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  tasksapi:
+    environment:  
+      - ASPNETCORE_ENVIRONMENT=Development  
+    ports:  
+      - "7200:80"
+
+  # ProjectSqlServer:  
+  #   environment:  
+  #     - ASPNETCORE_ENVIRONMENT=Development  
+  #   ports:  
+  #     - "32033:80"
