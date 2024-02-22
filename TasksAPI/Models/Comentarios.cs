@@ -9,5 +9,9 @@ namespace TasksAPI.Models
         public string Comentario { get; set; }
         [JsonIgnore]
         public int TarefaId { get; set; }
+        [JsonIgnore]
+        public int ProjetoId { get; set; }
+        [JsonIgnore]
+        public string Usuario { get; set; }
     }
 }

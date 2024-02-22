@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using TasksAPI.Models;
-using TasksAPI.Models.Enums;
-using TasksAPI.Services;
 using TasksAPI.Services.Interfaces;
 using TasksAPI.ViewModels;
 
@@ -173,7 +170,7 @@ namespace TasksAPI.Controllers
             }
         }
         /// <summary>
-        /// Salva uma nova comentario na tarefa
+        /// Salva um novo comentario na tarefa
         /// </summary>      
         /// <remarks>
         /// Exemplo de request:
@@ -209,7 +206,9 @@ namespace TasksAPI.Controllers
                 var comentario = new Comentarios
                 {
                     Comentario = viewModel.Comentario,
-                    TarefaId = viewModel.TarefaId
+                    TarefaId = viewModel.TarefaId,
+                    ProjetoId = viewModel.ProjectId,
+                    Usuario = viewModel.Usuario
                 };
 
                 await _comentarioService.Post(comentario);

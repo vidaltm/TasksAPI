@@ -10,5 +10,7 @@ namespace TasksAPI.ViewModels
         public int TarefaId { get; set; }
         [Required]
         public int ProjectId { get; set; }
+        [Required]
+        public string Usuario { get; set; }
     }
 }
